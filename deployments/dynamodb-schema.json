@@ -1,0 +1,20 @@
+{
+    "TableName": "ShortURLs",
+    "KeySchema": [
+      {
+        "AttributeName": "short_code",
+        "KeyType": "HASH"
+      }
+    ],
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "short_code",
+        "AttributeType": "S"
+      }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+  }
+  
